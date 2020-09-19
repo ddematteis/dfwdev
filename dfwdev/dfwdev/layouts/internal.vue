@@ -76,7 +76,8 @@
       </v-tooltip>
       </a>
     </v-app-bar>
-      <v-container fluid class="no-padding" style="width: 100%!important;padding:0px!important;">
+
+      <v-container fluid class="no-padding">
         <v-slide-y-transition mode="out-in">
           <nuxt />
         </v-slide-y-transition>
@@ -101,6 +102,10 @@
 
 <script>
 export default {
+  theme:{
+      light: true,
+      dark: false,
+    },
   data () {
     return {
       drawer: false,

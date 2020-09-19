@@ -9,18 +9,14 @@ html {
   -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #fff;
   color: #333;
-}
-
-body {
 }
 .navbar {
   border-radius: 0;
   background: #41b883 !important;
 }
 a {
-  color: #35495e;
+  color: #42A5F5;
 }
 
 #content {
@@ -41,4 +37,7 @@ a {
   font-style: normal;
   color: #999;
   line-height: 20px;
+}
+.v-application{
+  background: #fff!important;
 }

@@ -114,7 +114,6 @@ export default {
       items: [
         { icon: "mdi-home", title: "Home", to: "/" },
         { icon: "mdi-chart-bubble", title: "Services", to: "/services" },
-        { icon: "mdi-chart-bubble", title: "Projects", to: "/projects" },
         { icon: "mdi-contacts", title: "Contact", to: "/contact" }, 
       ],
       title: 'DfwDev.com'

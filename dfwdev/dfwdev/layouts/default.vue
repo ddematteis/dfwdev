@@ -62,7 +62,6 @@
       <v-toolbar-items class="ml-10 hidden-sm-and-down">
         <v-btn color="white" text to="/" exact>Home</v-btn>
         <v-btn color="white" text to="/services" exact>Services</v-btn>
-        <v-btn color="white" text to="/projects" exact>Projects</v-btn>
         <v-btn color="white" text to="/contact" exact>Contact</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
@@ -109,7 +108,6 @@ export default {
       items: [
         { icon: "mdi-home", title: "Home", to: "/" },
         { icon: "mdi-chart-bubble", title: "Services", to: "/services" },
-        { icon: "mdi-chart-bubble", title: "Projects", to: "/projects" },
         { icon: "mdi-contacts", title: "Contact", to: "/contact" }, 
       ],
       title: 'DfwDev.com'

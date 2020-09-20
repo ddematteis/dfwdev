@@ -16,8 +16,8 @@
           
           <v-container fill-height>
           <v-row > 
-          <v-col class="justify-center text-center align-center" style="margin-top: 50px;">
-          <v-card class="pa-3 card content xs11 align-center text-center" flat color="blue darken-4" id="message-form-card">
+          <v-col class="justify-center text-center align-center pa-10" style="margin-top: 50px;">
+          <v-card class="pa-3 card content align-center text-center" flat color="blue darken-4" id="message-form-card">
           <div id="message-form">
           <h2 class="font-weight-medium" style="color: #fff;">Send Us a Message</h2>
           <p>
@@ -62,15 +62,7 @@
           </div>
           </v-card>
           </v-col>
-          <v-col align="center" class="hidden-md-and-down">
-          <v-responsive>
-          <img class="rounded" 
-            src="../assets/img/content-stock2.svg"
-            :elevation="1"
-            height="300"
-          />
-          </v-responsive>
-          </v-col> 
+          
           </v-row>
 
           
@@ -115,7 +107,7 @@ export default {
             onSubmit (){   
             console.log({ name: this.name, email: this.email, message: this.message })
             
-                this.$http.post('http://35.239.79.126/contact_requests', { 
+                this.$http.post('https://api.dfwdev.com/contact_requests', { 
                 name: this.name,
                 email: this.email,
                 message: this.message

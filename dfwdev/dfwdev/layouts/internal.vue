@@ -62,7 +62,6 @@
       <v-toolbar-items class="ml-10 hidden-sm-and-down">
         <v-btn color="white" text to="/" exact>Home</v-btn>
         <v-btn color="white" text to="/services" exact>Services</v-btn>
-        <v-btn color="white" text to="/projects" exact>Projects</v-btn>
         <v-btn color="white" text to="/contact" exact>Contact</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>

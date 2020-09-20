@@ -207,7 +207,7 @@ export default {
             onSubmit (){   
             console.log({ site_req: this.site_req, site_type: this.site_type, org_type: this.org_type, timeframe: this.timeframe, name: this.name, email: this.email})
             
-                this.$http.post('http://35.239.79.126/quote_requests', { 
+                this.$http.post('https://api.dfwdev.com/quote_requests', { 
                 website_requirements: this.site_req,
                 website_type: this.site_type,
                 organization_type: this.org_type, 

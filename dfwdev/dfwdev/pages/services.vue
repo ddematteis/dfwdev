@@ -27,7 +27,7 @@
           <v-col align="center" class="hidden-md-and-down">
           <v-responsive>
           <img class="rounded" 
-            src="../assets/img/content-stock2.svg"
+            src="../assets/img/content-stock4.svg"
             :elevation="1"
             height="300"
           />
@@ -54,7 +54,7 @@
           <v-col align="center" class="hidden-md-and-down">
           <v-responsive>
           <img class="rounded" 
-            src="../assets/img/content-stock2.svg"
+            src="../assets/img/content-stock5.svg"
             :elevation="1"
             height="300"
           />
@@ -65,7 +65,7 @@
           <h2 class="font-weight-medium">Custom Web Applications</h2>
           <p>
           Maybe you need to automate some business logic, or maybe you have an idea for a new app. 
-          Whatever it might be, we have the ability to build full scale applications from the ground
+          Whatever it may be, we have the ability to build full scale applications from the ground
           up on a variety of software stacks. 
           </p>
           </v-card>
@@ -101,7 +101,7 @@
           <v-col align="center" class="hidden-md-and-down">
           <v-responsive>
           <img class="rounded" 
-            src="../assets/img/content-stock2.svg"
+            src="../assets/img/content-stock6.svg"
             :elevation="1"
             height="300"
           />
@@ -125,6 +125,15 @@
           <!-- end lines //-->
 
           <v-row >
+          <v-col align="center" class="hidden-md-and-down">
+          <v-responsive>
+          <img class="rounded" 
+            src="../assets/img/content-stock7.svg"
+            :elevation="1"
+            height="300"
+          />
+          </v-responsive>
+          </v-col>  
           <v-col class="justify-center text-center align-center" style="margin-top: 50px;">
           <v-card class="pa-3 card content xs11 align-center text-center" flat color="white">
           <h2 class="font-weight-medium">E-commerce (Online Stores)</h2>
@@ -135,15 +144,6 @@
           </p>
           </v-card>
           </v-col>
-          <v-col align="center" class="hidden-md-and-down">
-          <v-responsive>
-          <img class="rounded" 
-            src="../assets/img/content-stock2.svg"
-            :elevation="1"
-            height="300"
-          />
-          </v-responsive>
-          </v-col>  
           </v-row>
 
           </v-container>

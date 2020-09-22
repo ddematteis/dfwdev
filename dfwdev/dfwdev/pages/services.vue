@@ -155,7 +155,7 @@ export default {
     layout: 'internal',
     head(){
     return {
-      title: 'DFWDev.com - Our Services',
+      title: 'Our Services',
       meta: [
         { hid: 'description', name: 'description', content: 'We offer a wide range of web development services. We can help you with small-business websites, custom web applications, agency overflow services, and online stores.'}
 

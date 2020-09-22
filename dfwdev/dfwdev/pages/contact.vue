@@ -76,7 +76,7 @@ export default {
     layout: 'internal',
     head(){
     return {
-      title: 'DFWDev.com - Contact Us',
+      title: 'Contact Us',
       meta: [
         { hid: 'description', name: 'description', content: 'Contact DFWDev.com'}
 

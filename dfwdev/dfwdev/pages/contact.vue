@@ -74,6 +74,15 @@
 <script>
 export default {
     layout: 'internal',
+    head(){
+    return {
+      title: 'DFWDev.com - Contact Us',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Contact DFWDev.com'}
+
+      ]
+    }
+  },
     data(){
         return{
             class: 'input-theme',

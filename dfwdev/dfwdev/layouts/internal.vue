@@ -7,6 +7,7 @@
       fixed
       app
       color="brown darken-4"
+      class="drawer"
     >
       <v-list-item>
         <v-list-item-content>
@@ -134,6 +135,12 @@ padding: 0px!important;
 .logo{
   max-width: 100%;
   height: 35px;
+}
+.drawer{
+  color: #fff;
+  background-image: url("../assets/img/black-twill.png");
+  background-color: #37474F!important;
+  background-repeat: repeat;
 }
 .footer{
   color: #fff;

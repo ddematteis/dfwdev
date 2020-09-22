@@ -9,7 +9,7 @@
 <div id="jumbo-content1">    
 <div id="stepper-header">    
 <h3 class="display-2">We Can Help You With Your Web Projects</h3>
-<h4 class="subtitle-1">From simple websites to custom business applications DFWDev has a solution. Browse our <router-link to="/services">services</router-link> or request a quote to get started.</h4>
+<h4 class="subtitle-1">From small business websites to custom software DFWDev has a solution. Browse our <router-link to="/services">services</router-link> or request a quote to get started.</h4>
 </div>
 <QuoteStepper/>
 </div>
@@ -30,7 +30,7 @@
 <div id="jumbo-content2">  
 <div id="stepper-header">    
 <h3 class="display-2">We Can Help You With Your Web Projects</h3>
-<h4 class="subtitle-1">From simple websites to custom business applications DFWDev has a solution. Browse our <router-link to="/services">services</router-link> or request a quote to get started.</h4>
+<h4 class="subtitle-1">From small business websites to custom software DFWDev has a solution. Browse our <router-link to="/services">services</router-link> or request a quote to get started.</h4>
 </div>
 <QuoteStepper/>
 </div>
@@ -50,7 +50,7 @@
 <div id="jumbo-content3">  
 <div id="stepper-header">    
 <h3 class="display-2">We Can Help You With Your Web Projects</h3>
-<h4 class="subtitle-1">From simple websites to custom business applications DFWDev has a solution. Browse our <router-link to="/services">services</router-link> or request a quote to get started.</h4>
+<h4 class="subtitle-1">From small business websites to custom software DFWDev has a solution. Browse our <router-link to="/services">services</router-link> or request a quote to get started.</h4>
 </div>
 <QuoteStepper/>
 </div>

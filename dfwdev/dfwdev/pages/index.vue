@@ -92,6 +92,16 @@
 import JumboHome from "~/components/JumboHome.vue";
 
 export default {
+  head(){
+    return {
+      title: 'DFWDev.com - We can help you with your web projects',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Based in DFW, we can build anything from small business websites to custom software.'}
+
+      ]
+    }
+  },
+  
   components: {
     JumboHome
   },

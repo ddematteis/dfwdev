@@ -21,7 +21,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Based in DFW, we can build anything from small-business websites to custom software.'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
@@ -57,7 +57,14 @@ export default {
   */
   modules: [
       '@nuxt/http',
+      '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    path: '/sitemap.xml',
+    cacheTime: 1000* 60 * 60 * 2,
+    trailingSlash: true,
+    gzip: true
+  },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module

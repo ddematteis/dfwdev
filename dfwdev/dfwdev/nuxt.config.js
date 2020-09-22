@@ -60,7 +60,7 @@ export default {
       '@nuxtjs/sitemap'
   ],
   sitemap: {
-    hostname: 'dfwdev.com',
+    hostname: 'https://dfwdev.com',
     path: '/sitemap.xml',
     cacheTime: 1000* 60 * 60 * 2,
     trailingSlash: true,

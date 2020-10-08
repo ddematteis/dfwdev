@@ -7,11 +7,11 @@
 <v-col class="pa-5 pt-5">
 <div id="jumbo-content1">    
 <div id="stepper-header">    
-<h3 class="display-1">We are Experienced Web and Software Developers</h3>
-<h4 class="subtitle-1 mt-5">
+<h1 class="display-1">We are Experienced Web and Software Developers</h1>
+<h2 class="subtitle-1 mt-5">
 Small business websites, custom software development, online stores, DFW Dev can provide solutions. 
 Browse our <router-link to="/services">services</router-link> or request a quote to get started.
-</h4>
+</h2>
 </div>
 <QuoteStepper/>
 </div>
@@ -30,11 +30,11 @@ Browse our <router-link to="/services">services</router-link> or request a quote
 <v-container>
 <div id="jumbo-content2">  
 <div id="stepper-header">    
-<h3 class="display-2">We are Experienced Web and Software Developers</h3>
-<h4 class="subtitle-1 mt-10">
+<h1 class="display-2">We are Experienced Web and Software Developers</h1>
+<h2 class="subtitle-1 mt-10">
 Small business websites, custom software development, online stores, DFW Dev can provide solutions. 
 Browse our <router-link to="/services">services</router-link> or request a quote to get started.
-</h4>
+</h2>
 </div>
 <QuoteStepper/>
 </div>
@@ -60,11 +60,11 @@ Browse our <router-link to="/services">services</router-link> or request a quote
 <v-col >
 <div id="jumbo-content3">  
 <div id="stepper-header">    
-<h3 class="display-2">We are Experienced Web and Software Developers</h3>
-<h4 class="subtitle-1">
+<h1 class="display-2">We are Experienced Web and Software Developers</h1>
+<h2 class="subtitle-1">
 Small business websites, custom software development, online stores, DFW Dev can provide solutions. 
 Browse our <router-link to="/services">services</router-link> or request a quote to get started.
-</h4>
+</h2>
 </div>
 <QuoteStepper/>
 </div>
@@ -101,17 +101,17 @@ export default {
     padding: none;
     min-width: 100%;
 }
-.root-div h3{
+.root-div h1{
     color: #76FF03;
 }
-.root-div h4{
+.root-div h2{
     color: #fff;
 }
-.root-div h4 a{
+.root-div h2 a{
     color: #E65100;
     text-decoration: none;
 }
-.root-div h4 a:hover{
+.root-div h2 a:hover{
     color: #90CAF9;
     text-decoration: none;
 }

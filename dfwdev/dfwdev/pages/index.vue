@@ -20,9 +20,7 @@
           <v-card class="pa-3 card content xs11" >
           <h2 align="center" class="font-weight-medium">Who is DFW Dev?</h2>
           <p align="center">
-          We are a small network of highly experienced developers based in the Dallas-Fort Worth Metroplex. 
-          with the ability to solve a wide array of your technical problems. We have the ability to solve a
-          wide array of your technical problems. We specialize in SEO ready custom web application
+          We are a small network of highly experienced developers based in the Dallas-Fort Worth Metroplex. We specialize in SEO ready custom web application
           development. 
           </p>
           </v-card>

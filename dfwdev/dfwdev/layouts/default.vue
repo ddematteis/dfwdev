@@ -6,7 +6,7 @@
       :clipped="clipped"
       fixed
       app
-      color="brown darken-4"
+      color="blue-grey darken-3"
       class="drawer"
     >
       <v-list-item>
@@ -14,7 +14,7 @@
           <v-list-item-title class="title">
            <router-link to="/"> 
             <img
-            src="../assets/img/logo.png"
+            src="../assets/img/logo.svg"
             height="35"
           />
           </router-link>
@@ -40,6 +40,39 @@
             <v-list-item-title v-text="item.title" />
           </v-list-item-content>
         </v-list-item>
+
+        <v-divider></v-divider>
+      <v-container>
+      <a href="https://github.com/DFW-Dev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-github</v-icon>
+      </v-btn>
+      </a>
+
+      <a href="https://linkedin.com/company/dfwdev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-linkedin</v-icon>
+      </v-btn>
+      </a>
+
+      <a href="https://facebook.com/DFWDev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-facebook</v-icon>
+      </v-btn>
+      </a>
+
+      <a href="https://twitter.com/devdfw" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-twitter</v-icon>
+      </v-btn>
+      </a>
+      
+      <a href="https://instagram.com/dfwdev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-instagram</v-icon>
+      </v-btn>
+      </a>
+      </v-container>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
@@ -50,12 +83,14 @@
       elevate-on-scroll 
       class="mb-0 app-bar-custom"
     >
+    <v-container>
+      <v-row>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"/>
       
-      <v-toolbar-title >
+      <v-toolbar-title class="mt-2">
       <router-link to="/">  
       <img  class="logo"
-            src="../assets/img/logo.png"
+            src="../assets/img/logo.svg"
             
           />
       </router-link>    
@@ -66,15 +101,35 @@
         <v-btn color="white" text to="/contact" exact>Contact</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
-      <a href="https://github.com/ddematteis/dfwdev/tree/master/dfwdev" target="_blank">
-      <v-tooltip bottom color="green">
-        <template v-slot:activator="{ on, attrs }">
-      <v-icon x-large class="github-icon" v-bind="attrs"
-            v-on="on">mdi-github</v-icon>
-      </template>
-        <span>View this site's code on github</span>
-      </v-tooltip>
+      <div class="hidden-sm-and-down">
+      <a href="https://github.com/DFW-Dev" target="_blank">
+      <v-btn icon>
+        <v-icon medium>fab fa-github</v-icon>
+      </v-btn>
       </a>
+      <a href="https://linkedin.com/company/dfwdev" target="_blank">
+      <v-btn icon>
+        <v-icon medium>fab fa-linkedin</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://facebook.com/DFWDev" target="_blank">
+      <v-btn icon>
+        <v-icon medium>fab fa-facebook</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://twitter.com/devdfw" target="_blank">
+      <v-btn icon>
+        <v-icon medium>fab fa-twitter</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://instagram.com/dfwdev" target="_blank">
+      <v-btn icon>
+        <v-icon medium>fab fa-instagram</v-icon>
+      </v-btn>
+      </a>
+      </div>
+      </v-row>
+      </v-container>
     </v-app-bar>
       <v-container fluid class="no-padding" style="width: 100%!important;padding:0px!important;">
         <v-slide-y-transition mode="out-in">
@@ -83,17 +138,44 @@
       </v-container>
     
     <v-footer :fixed="fixed" class="d-flex justify-center footer">
-      <div style="margin:10px">
-        <div>
+      <div >
+        <v-row class="justify-center align-center">
           <router-link to="/" tar>
           <img
-            src="../assets/img/logo.png"
-            height="32"
+            src="../assets/img/logo.svg"
+            height="20"
             style="vertical-align:middle;margin-right:5px;"
           />
           </router-link>
-         <b> &copy; {{ new Date().getFullYear() }} DFWDev All Rights Reserved </b>
-        </div>
+      <a href="https://github.com/DFW-Dev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-github</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://linkedin.com/company/dfwdev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-linkedin</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://facebook.com/DFWDev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-facebook</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://twitter.com/devdfw" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-twitter</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://instagram.com/dfwdev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-instagram</v-icon>
+      </v-btn>
+      </a>
+      </v-row>
+      <v-row class="justify-center align-center mt-1">
+         <b> &copy; {{ new Date().getFullYear() }} - DFW Dev All Rights Reserved </b>
+      </v-row>
       </div>
     </v-footer>
   </v-app>
@@ -107,9 +189,9 @@ export default {
       clipped: false,
       fixed: false,
       items: [
-        { icon: "mdi-home", title: "Home", to: "/" },
-        { icon: "mdi-chart-bubble", title: "Services", to: "/services" },
-        { icon: "mdi-contacts", title: "Contact", to: "/contact" }, 
+        { icon: "fa-home", title: "Home", to: "/" },
+        { icon: "fa-sitemap", title: "Services", to: "/services" },
+        { icon: "fa-address-card", title: "Contact", to: "/contact" }, 
       ],
       title: 'DfwDev.com'
     }

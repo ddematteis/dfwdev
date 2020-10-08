@@ -21,10 +21,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Based in DFW, we can build anything from small-business websites to custom software.'}
+      { hid: 'description', name: 'description', content: 'We are web developers in DFW. We can help you with small business websites and custom software applications'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   /*
@@ -85,7 +85,8 @@ export default {
           success: colors.green.accent3
         }
       }
-    }
+    },
+    defaultAssets: {icons: 'fa'}
   },
   /*
   ** Build configuration

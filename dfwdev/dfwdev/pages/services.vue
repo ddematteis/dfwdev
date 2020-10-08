@@ -36,17 +36,19 @@
           </v-row>
 
           <!-- start lines //-->
-          <v-container class="divider-lines-container">
-          <v-row > 
-          <v-col class="divider-col" style="padding-bottom: 0px;">
+          <v-container fluid >
+          <div class="lines-wrapper">
+          <v-row> 
+          <v-col class="divider-col pb-0" >
           <div class="lines-top"></div>
           </v-col>
           </v-row >
           <v-row > 
-          <v-col style="padding-top: 0px;">
+          <v-col class="pt-0 pb-0">
           <div class="lines-bottom"></div>
           </v-col>
           </v-row>
+          </div>
           </v-container>
           <!-- end lines //-->
 
@@ -73,17 +75,19 @@
           </v-row>
 
           <!-- start lines //-->
-          <v-container class="divider-lines-container">
+          <v-container fluid>
+          <div class="lines-wrapper">
           <v-row > 
-          <v-col class="divider-col" style="padding-bottom: 0px;">
+          <v-col class="divider-col pt-0 pb-0">
           <div class="lines-top-mirror"></div>
           </v-col>
           </v-row >
           <v-row > 
-          <v-col style="padding-top: 0px;">
+          <v-col class="pt-0 pb-0">
           <div class="lines-bottom-mirror"></div>
           </v-col>
           </v-row>
+          </div>
           </v-container>
           <!-- end lines //-->
 
@@ -110,17 +114,19 @@
           </v-row>
           
           <!-- start lines //-->
-          <v-container class="divider-lines-container">
+          <v-container fluid>
+          <div class="lines-wrapper">
           <v-row > 
-          <v-col class="divider-col" style="padding-bottom: 0px;">
+          <v-col class="divider-col pt-0 pb-0" >
           <div class="lines-top"></div>
           </v-col>
           </v-row >
           <v-row > 
-          <v-col style="padding-top: 0px;">
+          <v-col class="pt-0 pb-0">
           <div class="lines-bottom"></div>
           </v-col>
           </v-row>
+          </div>
           </v-container>
           <!-- end lines //-->
 
@@ -139,7 +145,7 @@
           <h2 class="font-weight-medium">E-commerce (Online Stores)</h2>
           <p>
           We can help you set up an online store to sell your products. We can use any of the existing
-          e-commerce solutions like OScommerce or Woocommerce or if you have more advanced needs we can build
+          e-commerce solutions like Shopify, Woocommerce or if you have more advanced needs we can build
           custom solutions as well. Our Wordpress packages start at 300/mo and includes support and setup.   
           </p>
           </v-card>
@@ -152,7 +158,7 @@
 </template>
 <script>
 export default {
-    layout: 'internal',
+    layout: 'default',
     head(){
     return {
       title: 'Our Services',
@@ -174,8 +180,8 @@ export default {
 .content{
     color: #000!important;
 }
-.divider-lines-container{
-    margin-left: 15%;
+.lines-wrapper{
+  padding-left: 20%;
 }
 .lines-top{
     width: 60%;

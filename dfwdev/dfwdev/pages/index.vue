@@ -1,8 +1,6 @@
 <template>
-<div>
-  <v-row class="d-flex flex-columnt" align="center" justify="center" id="get-quote">
+<div class="pa-0">
     <JumboHome />
-  </v-row>
   <v-sheet
             tile="tile"
             :elevation="3"
@@ -20,10 +18,11 @@
           <v-row align="center" class="skew-reset" >
           <v-col >
           <v-card class="pa-3 card content xs11" >
-          <h2 align="center" class="font-weight-medium">Who is DFWDev?</h2>
+          <h2 align="center" class="font-weight-medium">Who is DFW Dev?</h2>
           <p align="center">
-          Based in the Dallas-Fort Worth Metroplex, we are a small network of highly experienced professionals 
-          with the ability to solve a wide array of your technical problems. We specialize in custom web application
+          We are a small network of highly experienced developers based in the Dallas-Fort Worth Metroplex. 
+          with the ability to solve a wide array of your technical problems. We have the ability to solve a
+          wide array of your technical problems. We specialize in SEO ready custom web application
           development. 
           </p>
           </v-card>
@@ -66,7 +65,7 @@
           </v-col>  
           <v-col class="justify-center text-center align-center" style="margin-top: 50px;">
           <v-card class="pa-3 card content xs11 align-center text-center" flat color="blue lighten-5">
-          <h2 class="font-weight-medium">Why Work With DfwDev?</h2>
+          <h2 class="font-weight-medium">Why Work With DFW Dev?</h2>
           <p>
           Whether you are a small business owner needing a website or an agency needing help with overflow; we can help. 
           Our pragmatic approach to technical problems lets us offer the right solutions to help make your project a success.
@@ -146,7 +145,7 @@ export default {
 .diag-bg{
   background: url('../assets/img/bottom-stock.jpg');
   background-position: center;
-  overflow: hidden;
+  overflow: hidden!important;
   padding: 0px;
   margin: 0px;
 }

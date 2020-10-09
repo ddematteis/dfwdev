@@ -1,27 +1,20 @@
 <template>
 <div class="pa-0">
     <JumboHome />
-  <v-sheet
-            tile="tile"
-            :elevation="3"
-            class="no-round d-flex pa-2"
-            height="400"
-            width="100%"
-            color="blue-grey lighten-5"
-            style="padding: 0px!important;"
-            fluid
+  
+          <v-parallax
+          dark
+          :src="require('@/assets/img/bottom-stock.jpg')"
+          id="bottom-content"
           >
-
-          <div class="diag-bg" style="padding: 0px; width:100%;">
-          <div class="diag-box">
           <v-container class="diag-content" >
-          <v-row align="center" class="skew-reset" >
+          <v-row align="center"  >
           <v-col >
           <v-card class="pa-3 card content xs11" >
           <h2 align="center" class="font-weight-medium">Who is DFW Dev?</h2>
           <p align="center">
-          We are a small network of highly experienced developers based in the Dallas-Fort Worth Metroplex. We specialize in SEO ready custom web application
-          development. 
+          We are a small network of highly experienced developers based in the Dallas-Fort Worth Metroplex. We specialize in building SEO ready custom web applications
+          and websites to help you meet your business needs.
           </p>
           </v-card>
           </v-col>
@@ -36,16 +29,12 @@
           </v-col>
           </v-row>
           </v-container>
-          </div>
-          </div>
-
-          </v-sheet>
+          </v-parallax>
 
             <v-sheet
             tile="tile"
             :elevation="3"
             class="no-round d-flex pa-2 content"
-            id="bottom-content"
             height="400"
             width="100%"
             color="blue lighten-5"
@@ -65,8 +54,9 @@
           <v-card class="pa-3 card content xs11 align-center text-center" flat color="blue lighten-5">
           <h2 class="font-weight-medium">Why Work With DFW Dev?</h2>
           <p>
-          Whether you are a small business owner needing a website or an agency needing help with overflow; we can help. 
-          Our pragmatic approach to technical problems lets us offer the right solutions to help make your project a success.
+          We are expert web and software developers with 15 years of experience. Our pragmatic 
+          approach to technical problems lets us offer the right solutions to help make your 
+          project a success.
           </p>
           <br/>
           

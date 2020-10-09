@@ -1,5 +1,5 @@
 <template>
-<div class="root-div">
+<div class="root-div" id="get-quote">
 <!-- Small Screens (iphone, galaxy, etc.)//-->
 <v-sheet class="jumbo-bg-sm hidden-md-and-up" > 
 <v-container fluid class="fill-height" >
@@ -78,10 +78,25 @@ Browse our <router-link to="/services">services</router-link> or request a quote
     </v-responsive>
 </v-col>
 </v-row>
-
 </v-container>
 </v-sheet>
 <!-- End Large Screens //-->
+<v-sheet>
+<v-container fluid class="pb-0 pt-0">
+<!-- Bottom Button //-->
+<v-row>
+<v-col class="jumbo-bottom-border pt-0" align="center" justify="center">
+<v-btn class="mx-auto scroll-btn" small fab color="white" 
+    @click="$vuetify.goTo('#bottom-content')"
+    >
+    <v-icon color="brown darken-3">fa-arrow-down</v-icon>
+    </v-btn>
+</v-col>
+</v-row>
+<!-- End Bottom Button //-->
+</v-container>
+</v-sheet>
+
 
 </div>    
 </template>
@@ -142,6 +157,7 @@ export default {
 .scroll-btn{
     position: relative;
     bottom: 10px;
+    z-index: 2;
 }
 .subtitle-1 a{
     color: #42A5F5;
@@ -151,5 +167,8 @@ export default {
 }
 .subtitle-1 a:hover{
     color: #fff;
+}
+.bottom-bar-wrapper{
+    z-index: 2;
 }
 </style>

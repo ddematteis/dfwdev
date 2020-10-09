@@ -42,7 +42,7 @@
         </v-list-item>
 
         <v-divider></v-divider>
-      <v-container>
+      <v-container class="social-links">
       <a href="https://github.com/DFW-Dev" target="_blank">
       <v-btn icon>
         <v-icon small>fab fa-github</v-icon>
@@ -101,7 +101,7 @@
         <v-btn color="white" text to="/contact" exact>Contact</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
-      <div class="hidden-sm-and-down">
+      <div class="social-links hidden-sm-and-down">
       <a href="https://github.com/DFW-Dev" target="_blank">
       <v-btn icon>
         <v-icon medium>fab fa-github</v-icon>
@@ -147,6 +147,7 @@
             style="vertical-align:middle;margin-right:5px;"
           />
           </router-link>
+      <div class="social-links">
       <a href="https://github.com/DFW-Dev" target="_blank">
       <v-btn icon>
         <v-icon small>fab fa-github</v-icon>
@@ -172,6 +173,7 @@
         <v-icon small>fab fa-instagram</v-icon>
       </v-btn>
       </a>
+      </div>
       </v-row>
       <v-row class="justify-center align-center mt-1">
          <b> &copy; {{ new Date().getFullYear() }} - DFW Dev All Rights Reserved </b>
@@ -228,5 +230,8 @@ padding: 0px!important;
 .footer b{
   font-weight: normal;
   color: #fff;
+}
+.social-links a{
+  text-decoration: none;
 }
 </style>

@@ -73,7 +73,7 @@
 </template>
 <script>
 export default {
-    layout: 'internal',
+    layout: 'default',
     head(){
     return {
       title: 'Contact Us',

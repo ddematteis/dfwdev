@@ -2,34 +2,32 @@
 <div class="pa-0">
     <JumboHome />
   
-          <v-parallax
-          dark
-          :src="require('@/assets/img/bottom-stock.jpg')"
-          id="bottom-content"
-          >
-          <v-container class="diag-content" >
-          <v-row align="center"  >
-          <v-col >
-          <v-card class="pa-3 card content xs11" >
-          <h2 align="center" class="font-weight-medium">Who is DFW Dev?</h2>
+    <v-parallax
+    :src="require('@/assets/img/bottom-stock.jpg')"
+    id="bottom-content"
+      >
+      <v-container>
+      <v-row
+      align="center"
+      justify="center"
+      >
+      <v-col
+        class="text-center"
+        cols="12"
+        >
+        <v-card class="pa-3 card content" >
+          <h3 align="center" class="font-weight-medium">Who is DFW Dev?</h3>
           <p align="center">
-          We are a small network of highly experienced developers based in the Dallas-Fort Worth Metroplex. We specialize in building SEO ready custom web applications
-          and websites to help you meet your business needs.
+          We are a network of highly experienced developers based in the Dallas-Fort Worth Metroplex. We specialize in building SEO ready custom web applications
+          and websites to help you meet your business needs. 
           </p>
           </v-card>
-          </v-col>
-          <v-col align="center" class="hidden-md-and-down">
-          <v-responsive>
-          <img class=" elevation-1 rounded" 
-            src="../assets/img/content-stock3.svg"
-            :elevation="1"
-            height="300"
-          />
-          </v-responsive>
-          </v-col>
-          </v-row>
-          </v-container>
-          </v-parallax>
+      </v-col>
+      </v-row>
+      </v-container>
+      </v-parallax>  
+
+         
 
             <v-sheet
             tile="tile"
@@ -153,7 +151,7 @@ counter this by skewing content back to 10 deg  */
   margin-top: 50px;
 }
 .card{
-  background: rgba(232,245,233,0.90)!important;
+  background: rgba(227,242,253,0.90)!important;
 }
 .content{
   color: #000!important;

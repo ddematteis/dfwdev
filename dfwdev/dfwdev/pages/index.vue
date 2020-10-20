@@ -3,28 +3,31 @@
     <JumboHome />
   
     <v-parallax
-    :src="require('@/assets/img/bottom-stock.jpg')"
+    :src="require('@/assets/img/city-stock.jpg')"
     id="bottom-content"
       >
-      <v-container>
-      <v-row
-      align="center"
-      justify="center"
-      >
-      <v-col
-        class="text-center"
-        cols="12"
-        >
-        <v-card class="pa-3 card content" >
-          <h3 align="center" class="font-weight-medium">Who is DFW Dev?</h3>
-          <p align="center">
-          We are a network of highly experienced developers based in the Dallas-Fort Worth Metroplex. We specialize in building SEO ready custom web applications
+      <v-container class="text-center align-center justify-center">
+          <v-row > 
+          <v-col class="justify-center text-center align-center" style="margin-top: 50px;">
+          <v-card class="pa-3 card content xs11 align-center text-center" flat color="blue lighten-5">
+          <h2 class="font-weight-medium">Who is DFW Dev?</h2>
+          <p>
+          We are a group of highly experienced developers based in the Dallas-Fort Worth Metroplex. We specialize in building SEO ready custom web applications
           and websites to help you meet your business needs. 
           </p>
           </v-card>
-      </v-col>
-      </v-row>
-      </v-container>
+          </v-col>
+          <v-col align="center" class="hidden-md-and-down">
+          <v-responsive>
+          <img class="rounded" 
+            src="../assets/img/txBig.svg"
+            :elevation="1"
+            height="300"
+          />
+          </v-responsive>
+          </v-col> 
+          </v-row>
+          </v-container>
       </v-parallax>  
 
          
@@ -52,16 +55,16 @@
           <v-card class="pa-3 card content xs11 align-center text-center" flat color="blue lighten-5">
           <h2 class="font-weight-medium">Why Work With DFW Dev?</h2>
           <p>
-          We are expert web and software developers with 15 years of experience. Our pragmatic 
-          approach to technical problems lets us offer the right solutions to help make your 
-          project a success.
+          We have been building web applications and websites for 15 years and are based in sunny (and windy) DFW, Texas.
+          We care about getting your project finished. Our pragmatic approach to technical problems allows us to offer 
+          the right solutions to help make your project a success. 
           </p>
           <br/>
           
-          <v-btn color="orange darken-4"
-          @click="$vuetify.goTo('#get-quote')" 
+          <v-btn color="orange darken-4" 
+          to="/services#services-top"
           >
-          Request a Quote
+          View Our Services
           </v-btn>
           </v-card>
           </v-col>
@@ -79,7 +82,7 @@ import JumboHome from "~/components/JumboHome.vue";
 export default {
   head(){
     return {
-      title: 'We can help you with your web projects',
+      title: 'Experienced Web and Software Developers in DFW Texas',
       meta: [
         { hid: 'description', name: 'description', content: 'Based in DFW, we can build anything from small business websites to custom software.'}
 

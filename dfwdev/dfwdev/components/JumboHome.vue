@@ -7,7 +7,7 @@
 <v-col class="pa-5 pt-5">
 <div id="jumbo-content1">    
 <div id="stepper-header">    
-<h1 class="display-1">We are Experienced Web and Software Developers</h1>
+<h1 class="display-1">We Are Experienced Web and Software Developers</h1>
 <h2 class="subtitle-1 mt-5">
 Small business websites, custom software development, online stores, DFW Dev can provide solutions. 
 Browse our <router-link to="/services">services</router-link> or request a quote to get started.
@@ -30,7 +30,7 @@ Browse our <router-link to="/services">services</router-link> or request a quote
 <v-container>
 <div id="jumbo-content2">  
 <div id="stepper-header">    
-<h1 class="display-2">We are Experienced Web and Software Developers</h1>
+<h1 class="display-2">We Are Experienced Web and Software Developers</h1>
 <h2 class="subtitle-1 mt-10">
 Small business websites, custom software development, online stores, DFW Dev can provide solutions. 
 Browse our <router-link to="/services">services</router-link> or request a quote to get started.
@@ -60,7 +60,7 @@ Browse our <router-link to="/services">services</router-link> or request a quote
 <v-col >
 <div id="jumbo-content3">  
 <div id="stepper-header">    
-<h1 class="display-2">We are Experienced Web and Software Developers</h1>
+<h1 class="display-1">We Are Experienced Web and Software Developers</h1>
 <h2 class="subtitle-1">
 Small business websites, custom software development, online stores, DFW Dev can provide solutions. 
 Browse our <router-link to="/services">services</router-link> or request a quote to get started.
@@ -171,4 +171,6 @@ export default {
 .bottom-bar-wrapper{
     z-index: 2;
 }
+
+
 </style>

@@ -6,7 +6,7 @@
       :clipped="clipped"
       fixed
       app
-      color="blue-grey darken-3"
+      color="brown darken-4"
       class="drawer"
     >
       <v-list-item>
@@ -66,12 +66,6 @@
         <v-icon small>fab fa-twitter</v-icon>
       </v-btn>
       </a>
-      
-      <a href="https://instagram.com/dfwdev" target="_blank">
-      <v-btn icon>
-        <v-icon small>fab fa-instagram</v-icon>
-      </v-btn>
-      </a>
       </v-container>
       </v-list>
     </v-navigation-drawer>
@@ -98,6 +92,7 @@
       <v-toolbar-items class="ml-10 hidden-sm-and-down">
         <v-btn color="white" text to="/" exact>Home</v-btn>
         <v-btn color="white" text to="/services" exact>Services</v-btn>
+        <v-btn color="white" text to="/projects" exact>Projects</v-btn>
         <v-btn color="white" text to="/contact" exact>Contact</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
@@ -122,11 +117,9 @@
         <v-icon medium>fab fa-twitter</v-icon>
       </v-btn>
       </a>
-      <a href="https://instagram.com/dfwdev" target="_blank">
-      <v-btn icon>
-        <v-icon medium>fab fa-instagram</v-icon>
-      </v-btn>
-      </a>
+      <!--
+      <v-btn color="white" text to="/login" exact>Login</v-btn>
+      //-->
       </div>
       </v-row>
       </v-container>
@@ -136,17 +129,26 @@
           <nuxt />
         </v-slide-y-transition>
       </v-container>
-    
-    <v-footer :fixed="fixed" class="d-flex justify-center footer">
-      <div >
-        <v-row class="justify-center align-center">
-          <router-link to="/" tar>
-          <img
-            src="../assets/img/logo.svg"
-            height="20"
-            style="vertical-align:middle;margin-right:5px;"
-          />
-          </router-link>
+   
+
+
+
+
+
+
+
+
+
+    <v-footer
+    :fixed="fixed"
+    padless
+  >
+    <v-card
+      class="flex footer"
+      flat
+      tile
+    >
+      <v-card-title>
       <div class="social-links">
       <a href="https://github.com/DFW-Dev" target="_blank">
       <v-btn icon>
@@ -168,18 +170,25 @@
         <v-icon small>fab fa-twitter</v-icon>
       </v-btn>
       </a>
-      <a href="https://instagram.com/dfwdev" target="_blank">
-      <v-btn icon>
-        <v-icon small>fab fa-instagram</v-icon>
+      </div>
+      <v-spacer></v-spacer>
+      
+      <v-btn icon class="tx-icon-wrap">
+        <img 
+            src="../assets/img/txIcon.svg"
+            height="25"
+          />          
       </v-btn>
-      </a>
-      </div>
-      </v-row>
-      <v-row class="justify-center align-center mt-1">
-         <b> &copy; {{ new Date().getFullYear() }} - DFW Dev All Rights Reserved </b>
-      </v-row>
-      </div>
-    </v-footer>
+      <b class="subtitle-1">Made in Dallas, TX USA</b>  
+      </v-card-title>
+
+      <v-card-text class="py-2 white--text text-center">
+       &copy; {{ new Date().getFullYear() }} — <strong>DFW Dev All Rights Reserved</strong>
+      </v-card-text>
+    </v-card>
+  </v-footer>
+
+
   </v-app>
 </template>
 
@@ -192,10 +201,11 @@ export default {
       fixed: false,
       items: [
         { icon: "fa-home", title: "Home", to: "/" },
-        { icon: "fa-sitemap", title: "Services", to: "/services" },
+        { icon: "fa-concierge-bell", title: "Services", to: "/services" },
+        { icon: "fa-sitemap", title: "Projects", to: "/projects" },
         { icon: "fa-address-card", title: "Contact", to: "/contact" }, 
       ],
-      title: 'DfwDev.com'
+      title: 'Experienced Web and Software Developers in DFW Texas'
     }
   }
 }
@@ -233,5 +243,8 @@ padding: 0px!important;
 }
 .social-links a{
   text-decoration: none;
+}
+.tx-icon-wrap{
+  cursor: default;
 }
 </style>

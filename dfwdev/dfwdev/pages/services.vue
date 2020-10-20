@@ -1,23 +1,23 @@
 <template>
 <div>
-<v-sheet class="align-center" color="blue lighten-5" height="200" style="text-align: center;">
-<h1 class="page-title">Services We Offer</h1>
+<v-sheet class="align-center" color="blue lighten-5" height="150" style="text-align: center;">
+<h1 class="page-title display-1" id="services-top">Core Services</h1>
 </v-sheet>
 <v-sheet
             tile="tile"
-            :elevation="3"
+            :elevation="0"
             class="no-round d-flex pa-2 content"
             id="bottom-content"
             width="100%"
             color="white"
           >
-
+          
           
           <v-container>
           <v-row > 
           <v-col class="justify-center text-center align-center" style="margin-top: 50px;">
           <v-card class="pa-3 card content xs11 align-center text-center" flat color="white">
-          <h2 class="font-weight-medium">Small Business Sites Starting at 150/mo</h2>
+          <h2 class="font-weight-medium">Small Business Sites Starting at 100/mo</h2>
           <p>
           We can build you a great looking website to advertise your small business. Need more than a website?
           We can help with that too. 
@@ -96,9 +96,9 @@
           <v-card class="pa-3 card content xs11 align-center text-center" flat color="white">
           <h2 class="font-weight-medium">Overflow Services</h2>
           <p>
-          We provide discreet and reliable overflow services to agencies that need some extra help on projects.
-          Our experience on a variety of software stacks and open source software like Wordpress and Joomla 
-          can help alleviate some of your workload; allowing you to focus on other things.    
+          We provide reliable overflow services to web development and marketing agencies. 
+          Our experience with a variety of software stacks and apis can help alleviate 
+          some of your workload; allowing you to focus on other things.     
           </p>
           </v-card>
           </v-col>
@@ -159,17 +159,18 @@
 <script>
 export default {
     layout: 'default',
+    scrollToTop: true,
     head(){
     return {
       title: 'Our Services',
       meta: [
-        { hid: 'description', name: 'description', content: 'We offer a wide range of web development services. We can help you with small-business websites, custom web applications, agency overflow services, and online stores.'}
+        { hid: 'description', name: 'description', content: 'We offer a wide range of web development services including: Small-business websites, custom web applications, agency overflow services, and online stores.'}
 
       ]
     }
   },
-
 }
+
 </script>
 <style>
 .page-title{
@@ -205,5 +206,49 @@ export default {
     width: 60%;
     height: 50px;
     border-left: 3px dashed #76FF03;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: 0px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+/* Animation */
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
 }
 </style>

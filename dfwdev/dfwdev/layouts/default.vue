@@ -14,7 +14,7 @@
           <v-list-item-title class="title">
            <router-link to="/"> 
             <img
-            src="../assets/img/logo.png"
+            src="../assets/img/logo.svg"
             height="35"
           />
           </router-link>
@@ -40,6 +40,33 @@
             <v-list-item-title v-text="item.title" />
           </v-list-item-content>
         </v-list-item>
+
+        <v-divider></v-divider>
+      <v-container class="social-links">
+      <a href="https://github.com/DFW-Dev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-github</v-icon>
+      </v-btn>
+      </a>
+
+      <a href="https://linkedin.com/company/dfwdev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-linkedin</v-icon>
+      </v-btn>
+      </a>
+
+      <a href="https://facebook.com/DFWDev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-facebook</v-icon>
+      </v-btn>
+      </a>
+
+      <a href="https://twitter.com/devdfw" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-twitter</v-icon>
+      </v-btn>
+      </a>
+      </v-container>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
@@ -50,12 +77,14 @@
       elevate-on-scroll 
       class="mb-0 app-bar-custom"
     >
+    <v-container>
+      <v-row>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"/>
       
-      <v-toolbar-title >
+      <v-toolbar-title class="mt-2">
       <router-link to="/">  
       <img  class="logo"
-            src="../assets/img/logo.png"
+            src="../assets/img/logo.svg"
             
           />
       </router-link>    
@@ -63,39 +92,106 @@
       <v-toolbar-items class="ml-10 hidden-sm-and-down">
         <v-btn color="white" text to="/" exact>Home</v-btn>
         <v-btn color="white" text to="/services" exact>Services</v-btn>
+        <v-btn color="white" text to="/projects" exact>Projects</v-btn>
         <v-btn color="white" text to="/contact" exact>Contact</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
-      <a href="https://github.com/ddematteis/dfwdev/tree/master/dfwdev" target="_blank">
-      <v-tooltip bottom color="green">
-        <template v-slot:activator="{ on, attrs }">
-      <v-icon x-large class="github-icon" v-bind="attrs"
-            v-on="on">mdi-github</v-icon>
-      </template>
-        <span>View this site's code on github</span>
-      </v-tooltip>
+      <div class="social-links hidden-sm-and-down">
+      <a href="https://github.com/DFW-Dev" target="_blank">
+      <v-btn icon>
+        <v-icon medium>fab fa-github</v-icon>
+      </v-btn>
       </a>
+      <a href="https://linkedin.com/company/dfwdev" target="_blank">
+      <v-btn icon>
+        <v-icon medium>fab fa-linkedin</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://facebook.com/DFWDev" target="_blank">
+      <v-btn icon>
+        <v-icon medium>fab fa-facebook</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://twitter.com/devdfw" target="_blank">
+      <v-btn icon>
+        <v-icon medium>fab fa-twitter</v-icon>
+      </v-btn>
+      </a>
+      <!--
+      <v-btn color="white" text to="/login" exact>Login</v-btn>
+      //-->
+      </div>
+      </v-row>
+      </v-container>
     </v-app-bar>
       <v-container fluid class="no-padding" style="width: 100%!important;padding:0px!important;">
         <v-slide-y-transition mode="out-in">
           <nuxt />
         </v-slide-y-transition>
       </v-container>
-    
-    <v-footer :fixed="fixed" class="d-flex justify-center footer">
-      <div style="margin:10px">
-        <div>
-          <router-link to="/" tar>
-          <img
-            src="../assets/img/logo.png"
-            height="32"
-            style="vertical-align:middle;margin-right:5px;"
-          />
-          </router-link>
-         <b> &copy; {{ new Date().getFullYear() }} DFWDev All Rights Reserved </b>
-        </div>
+   
+
+
+
+
+
+
+
+
+
+    <v-footer
+    :fixed="fixed"
+    padless
+  >
+    <v-card
+      class="flex footer"
+      flat
+      tile
+    >
+
+      <v-card-title>
+      <v-container>
+      <div class="social-links">
+      <a href="https://github.com/DFW-Dev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-github</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://linkedin.com/company/dfwdev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-linkedin</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://facebook.com/DFWDev" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-facebook</v-icon>
+      </v-btn>
+      </a>
+      <a href="https://twitter.com/devdfw" target="_blank">
+      <v-btn icon>
+        <v-icon small>fab fa-twitter</v-icon>
+      </v-btn>
+      </a>
       </div>
-    </v-footer>
+      <v-spacer></v-spacer>
+      
+      <v-btn icon class="tx-icon-wrap">
+        <img 
+            src="../assets/img/txIcon.svg"
+            height="25"
+          />          
+      </v-btn>
+      <b class="subtitle-1">Made in Dallas, TX USA</b>  
+      </v-container>
+      </v-card-title>
+
+      <v-card-text class="py-2 white--text text-center">
+       &copy; {{ new Date().getFullYear() }} — <strong>DFW Dev All Rights Reserved</strong>
+      </v-card-text>
+    </v-card>
+  </v-footer>
+
+
   </v-app>
 </template>
 
@@ -107,11 +203,12 @@ export default {
       clipped: false,
       fixed: false,
       items: [
-        { icon: "mdi-home", title: "Home", to: "/" },
-        { icon: "mdi-chart-bubble", title: "Services", to: "/services" },
-        { icon: "mdi-contacts", title: "Contact", to: "/contact" }, 
+        { icon: "fa-home", title: "Home", to: "/" },
+        { icon: "fa-concierge-bell", title: "Services", to: "/services" },
+        { icon: "fa-sitemap", title: "Projects", to: "/projects" },
+        { icon: "fa-address-card", title: "Contact", to: "/contact" }, 
       ],
-      title: 'DfwDev.com'
+      title: 'Experienced Web and Software Developers in DFW Texas'
     }
   }
 }
@@ -146,5 +243,11 @@ padding: 0px!important;
 .footer b{
   font-weight: normal;
   color: #fff;
+}
+.social-links a{
+  text-decoration: none;
+}
+.tx-icon-wrap{
+  cursor: default;
 }
 </style>

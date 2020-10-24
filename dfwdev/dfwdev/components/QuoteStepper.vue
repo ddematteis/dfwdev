@@ -1,23 +1,35 @@
 <template>
 <v-stepper v-model="e1" id="quote_stepper3" class="quote-stepper elevation-0">
+    <div id="jumbo-content">
     <v-form>
       <v-stepper-items>
         <!-------------------------//-->  
         <!--Step 1-----------------//-->  
         <!-------------------------//-->  
         <v-stepper-content step="1">
+        <h1 class="display-1 mt-5 mb-5">We are Web and App Developers in Dallas, Texas</h1>
+        <div class="subtitle-1">
+        We can create a web presence for you and help you reach more potential customers. Request a quote for a free consultation.
+        </div>
+        <v-row align="center" justify="center">
+        <v-col cols="11" md="10" lg="7" xl="7" class="pa-10"  justify="center">
           <v-btn
-            color="green darken-3"
+            color="orange darken-4"
             @click="e1 = 2"
           >
             Request a Quote
           </v-btn>
+        </v-col>
+        </v-row>
         </v-stepper-content>
         <!-------------------------//-->  
         <!--Step 2-----------------//--> 
         <!-------------------------//-->
         <v-stepper-content step="2">
-          <v-select
+        <div class="subtitle-1 mb-5">
+        What kind of project do you have?
+        </div>
+          <v-select class="mt-5 mb-5"
           v-model="site_req"
           name="site_req"
           :items="site_req_items"
@@ -25,7 +37,7 @@
           :rules="[v => !!v || 'This field is required']"
           required
           ></v-select>
-  
+          
           <v-btn
             :disabled="!site_req"
             color="orange darken-4"
@@ -38,7 +50,11 @@
         <!--Step 3-----------------//--> 
         <!-------------------------//-->
         <v-stepper-content step="3">
-          <v-select
+        <div class="subtitle-1 mb-5">
+        What do you plan on doing with your site/app?
+        </div>
+
+          <v-select class="mt-5 mb-5"
           v-model="site_type"
           name="site_type"
           :items="site_type_items"
@@ -48,6 +64,7 @@
           ></v-select>
   
           <v-btn
+            
             :disabled="!site_type"
             color="orange darken-4"
             @click="e1 = 4"
@@ -59,11 +76,15 @@
         <!--Step 4-----------------//--> 
         <!-------------------------//-->
         <v-stepper-content step="4">
-          <v-select
+        <div class="subtitle-1 mb-5">
+        What type of organization are you with?
+        </div>
+
+          <v-select class="mt-5 mb-5"
           v-model="org_type"
           name="org_type"
           :items="org_type_items"
-          label="What type of organization are you?"
+          label="What type of organization are you with?"
           :rules="[v => !!v || 'This field is required']"
           required
           ></v-select>
@@ -80,7 +101,10 @@
         <!--Step 5-----------------//--> 
         <!-------------------------//-->
         <v-stepper-content step="5">
-          <v-select
+        <div class="subtitle-1 mb-5">
+        How soon do you need your project done?
+        </div>
+          <v-select class="mt-5 mb-5"
           v-model="timeframe"
           name="timeframe"
           :items="timeframe_items"
@@ -101,8 +125,11 @@
         <!--Step 6-----------------//--> 
         <!-------------------------//-->
         <v-stepper-content step="6">
-          
+        <div class="subtitle-1 mb-5">
+        Please enter your name so we know who to contact
+        </div>
           <v-text-field
+          class="mt-5 mb-5"
           v-model="name"
           name="name"
           label="Your name"
@@ -121,8 +148,12 @@
         <!--Step 7-----------------//--> 
         <!-------------------------//-->
         <v-stepper-content step="7">
-          
+        <div class="subtitle-1 mb-5">
+        Please enter an email address where we can reach you.
+        We will only contact you about this quote request. 
+        </div>
           <v-text-field
+          class="mt-5 mb-5"
           v-model="email"
           name="email"
           label="Your Email (Will only be used by us to contact you)"
@@ -139,6 +170,7 @@
         </v-stepper-content>
       </v-stepper-items>
       </v-form>
+      </div>
     </v-stepper>    
 </template>
 <script>
@@ -215,23 +247,25 @@ export default {
                 name: this.name,
                 email: this.email
                 })
-                document.getElementById("stepper-header").style.visibility = "hidden";
-                document.getElementById("jumbo-content1").innerHTML = "<h3 class='display-2' style='color: #76FF03;'>We Have Received Your Request</h3>"+
-                "<h4 class='subtitle-1'>Someone will email you within 24 hours at the address you provided to discuss your project.</h4>";
-                document.getElementById("jumbo-content2").innerHTML = "<h3 class='display-2' style='color: #76FF03;'>We Have Received Your Request</h3>"+
-                "<h4 class='subtitle-1'>Someone will email you within 24 hours at the address you provided to discuss your project.</h4>";
-                document.getElementById("jumbo-content3").innerHTML = "<h3 class='display-2' style='color: #76FF03;'>We Have Received Your Request</h3>"+
-                "<h4 class='subtitle-1'>Someone will email you within 24 hours at the address you provided to discuss your project.</h4>";
+                
+                document.getElementById("jumbo-content").innerHTML = "<div class='confirm-wrap'><div class='display-1 mt-5 mb-5 info-received'>We Have Received Your Information</div>"+
+                "<div class='subtitle-1'>A developer will contact you soon by email to begin discussing your project with you. "+
+                "In the meantime, feel free to keep browsing our site to learn about your services.</div></div>";
 
         }
     }
 }
 </script>
 <style>
+
 .quote-stepper{
     background: none!important;
 }
-.request-received h1{
-    color: #7CB342!important;
+.confirm-wrap{
+  text-align: center;
+  padding: 10px;
+}
+.info-received {
+    color: #76FF03!important;
 }
 </style>

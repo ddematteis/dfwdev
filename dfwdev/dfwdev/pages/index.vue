@@ -12,7 +12,7 @@
     <v-card class="pa-5 card content align-center text-center" flat color="white">
         <h2 class="font-weight-medium">Who is DFW Dev?</h2>
         <p class="mt-5">
-        We are a small group of highly experienced web and software developers based in the Dallas-Fort Worth Metroplex. 
+        We are a group of highly experienced web and software developers based in the Dallas-Fort Worth Metroplex. 
         We specialize in providing a search engine friendly web presence for small and large businesses. 
         </p>
     </v-card>

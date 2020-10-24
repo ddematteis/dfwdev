@@ -7,12 +7,13 @@
         <!--Step 1-----------------//-->  
         <!-------------------------//-->  
         <v-stepper-content step="1">
+        <v-container>
+        <v-row>
+        <v-col cols="12" align="center" justify="center">
         <h1 class="display-1 mt-5 mb-5">We are Web and App Developers in Dallas, Texas</h1>
-        <div class="subtitle-1">
+        <div class="subtitle-1 mb-5">
         We can create a web presence for you and help you reach more potential customers. Request a quote for a free consultation.
         </div>
-        <v-row align="center" justify="center">
-        <v-col cols="11" md="10" lg="7" xl="7" class="pa-10"  justify="center">
           <v-btn
             color="orange darken-4"
             @click="e1 = 2"
@@ -21,6 +22,7 @@
           </v-btn>
         </v-col>
         </v-row>
+        </v-container>
         </v-stepper-content>
         <!-------------------------//-->  
         <!--Step 2-----------------//--> 

@@ -73,7 +73,6 @@
       :clipped-left="clipped"
       fixed
       app
-      color="blue darken-3" 
       elevate-on-scroll 
       class="mb-0 app-bar-custom"
     >
@@ -150,7 +149,6 @@
     >
 
       <v-card-title>
-      <v-container>
       <div class="social-links">
       <a href="https://github.com/DFW-Dev" target="_blank">
       <v-btn icon>
@@ -182,7 +180,6 @@
           />          
       </v-btn>
       <b class="subtitle-1">Made in Dallas, TX USA</b>  
-      </v-container>
       </v-card-title>
 
       <v-card-text class="py-2 white--text text-center">
@@ -214,6 +211,9 @@ export default {
 }
 </script>
 <style>
+.app-bar-custom{
+  background: #1565C0 url("https://www.transparenttextures.com/patterns/60-lines.png") repeat!important;
+}
 .app-bar-custom a{
   text-decoration: none;
 }
